@@ -1,0 +1,2 @@
+1. The bug was that the input values were being read as strings, and when the program used the plus operator, JS performed string concatenation instead of addition. This meant for inputs "2" and "3", the output sum would be "23" rather than "5".
+2. I would fix this by converting the input values to numbers in printSum() before they are added in calculateSum(). I used Number() to do the conversion.
